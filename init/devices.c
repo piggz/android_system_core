@@ -641,7 +641,7 @@ static char **get_block_device_symlinks(struct uevent *uevent)
     if (bootdevice[0] == '\0')
         is_bootdevice = 0;
     else if (!strncmp(device, bootdevice, sizeof(bootdevice))) {
-        make_link(link_path, "/dev/block/bootdevice");
+        make_link_init(link_path, "/dev/block/bootdevice");
         is_bootdevice = 1;
     }
 
