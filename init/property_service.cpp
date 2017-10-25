@@ -68,7 +68,7 @@ static int property_set_fd = -1;
 void property_init() {
     if (__system_property_area_init()) {
         ERROR("Failed to initialize property area\n");
-        exit(1);
+        //exit(1);
     }
 }
 
